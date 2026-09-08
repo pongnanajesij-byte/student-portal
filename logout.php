@@ -1,0 +1,26 @@
+
+<?php
+
+session_start();
+
+/*
+   Remove all session data
+*/
+$_SESSION = array();
+
+
+/*
+   Destroy session
+*/
+session_destroy();
+
+
+/*
+   Go back to login page
+*/
+header("Location: login.php");
+
+exit;
+
+?>
+
